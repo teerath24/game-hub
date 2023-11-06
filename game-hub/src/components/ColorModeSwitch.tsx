@@ -1,3 +1,4 @@
+//useColorMode is a custom hook defined in chakra
 import { HStack, Switch, Text, useColorMode } from "@chakra-ui/react";
 
 const ColorModeSwitch = () => {
@@ -7,8 +8,8 @@ const ColorModeSwitch = () => {
     <HStack>
       <Switch
         colorScheme="green"
-        isChecked={colorMode === "dark"}
-        onChange={toggleColorMode}
+        isChecked={colorMode === "dark"} // If colorMode is "dark," the switch will be in the "on" state (checked)
+        onChange={toggleColorMode} //handles the change of the colorMode
       />
       <Text>Dark Mode</Text>
     </HStack>
@@ -16,3 +17,5 @@ const ColorModeSwitch = () => {
 };
 
 export default ColorModeSwitch;
+
+//go to navbar and place ColorModeSwitch in HStack
